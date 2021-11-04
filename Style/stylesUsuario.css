@@ -1,0 +1,143 @@
+@import url('http://fonts.cdnfonts.com/css/billabong'); /*Instagram font*/
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background-image: url('../img/fondoUsuario.jpg');
+}
+.tituloUsuario {
+	text-align: center;
+	margin-top: 40px;
+	font-family: 'Poppins', sans-serif;
+	background-size: 400%;
+	background: linear-gradient(
+		90deg,
+		rgb(131, 58, 180),
+		rgb(225, 48, 108),
+		rgb(245, 96, 64),
+		rgb(252, 175, 69),
+		rgb(255, 220, 128)
+	);
+	font-size: 50px;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	font-family: 'Billabong', sans-serif;
+}
+.container {
+	background-color: white;
+	width: 40%;
+	height: 480px;
+	margin: auto;
+	border: solid 3px black;
+	margin-top: 40px;
+}
+.nombre {
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	text-transform: capitalize;
+}
+.imagen {
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+}
+.boton {
+	display: flex;
+	text-decoration: none;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	justify-content: center;
+	margin-top: 50px;
+	cursor: pointer;
+}
+.boton:hover {
+	background: linear-gradient(
+		90deg,
+		rgb(131, 58, 180),
+		rgb(225, 48, 108),
+		rgb(245, 96, 64),
+		rgb(252, 175, 69),
+		rgb(255, 220, 128)
+	);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	transition: 5s;
+}
+
+footer {
+	margin-top: 30px;
+	position: relative;
+	bottom: 0;
+	background: rgb(16, 20, 20);
+	height: auto;
+	width: 100%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: rgb(200, 197, 201);
+}
+
+.footer-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.footer-h3,
+.footer-p {
+	padding: 5px;
+	display: flex;
+	background: linear-gradient(
+		90deg,
+		#ff0000,
+		#ff0000,
+		#ff00f3,
+		#0033ff,
+		#ff00c4,
+		#ff0000
+	);
+	font-size: 30px;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	text-align: center;
+	background-size: 400%;
+	animation: cambiar 5s linear infinite;
+}
+
+@keyframes cambiar {
+	0% {
+		background-position: 0%;
+	}
+
+	100% {
+		background-position: 400%;
+	}
+}
+
+.footer-info {
+	margin-top: 10px;
+}
+
+@media screen and (max-width: 700px) {
+	.footer-h3,
+	.footer-p {
+		font-size: 18px;
+	}
+	.container {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.container {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 390px) {
+}
